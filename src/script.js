@@ -25,6 +25,7 @@ const textureLoader = new THREE.TextureLoader();
 // const matcapTexture = textureLoader.load("/textures/matcaps/1.png");
 // matcapTexture.colorSpace = THREE.SRGBColorSpace;
 
+//const donutTexture = textureLoader.load("/textures/donut.jpg");
 const donutTexture = textureLoader.load("/textures/donut.jpg");
 donutTexture.colorSpace = THREE.SRGBColorSpace;
 donutTexture.wrapS = THREE.RepeatWrapping;
