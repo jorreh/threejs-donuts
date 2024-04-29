@@ -26,7 +26,8 @@ const textureLoader = new THREE.TextureLoader();
 // matcapTexture.colorSpace = THREE.SRGBColorSpace;
 
 //const donutTexture = textureLoader.load("/textures/donut.jpg");
-const donutTexture = textureLoader.load("/textures/donut.jpg");
+const basePath = window.location.pathname.replace(/\/$/, ""); // Remove trailing slash
+const donutTexture = textureLoader.load(basePath + "/textures/donut.jpg");
 donutTexture.colorSpace = THREE.SRGBColorSpace;
 donutTexture.wrapS = THREE.RepeatWrapping;
 donutTexture.wrapT = THREE.RepeatWrapping;
@@ -38,7 +39,7 @@ donutTexture.minFilter = THREE.NearestFilter;
  */
 const fontLoader = new FontLoader();
 
-fontLoader.load("/fonts/helvetiker_regular.typeface.json", (font) => {
+fontLoader.load(basePath + "/fonts/helvetiker_regular.typeface.json", (font) => {
   const textGeometry = new TextGeometry("Lots of doughnuts", {
     font: font,
     size: 0.5,
