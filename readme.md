@@ -1,6 +1,6 @@
 # Three.js Journey
 
-## Setup
+## Setup with npm
 Download [Node.js](https://nodejs.org/en/download/).
 Run this followed commands:
 
